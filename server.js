@@ -8,6 +8,7 @@ const clientRouter = require("./client/client-router");
 const instructorRouter = require("./instructor/instructor-router");
 const ClientAuthRouter = require("./client/client-authRouter");
 const InstructorAuthRouter = require("./instructor/instructor-authRouter");
+const classRouter = require("./class/class-router");
 const authenticator = require("./authenticator");
 
 const server = express();
@@ -19,6 +20,7 @@ server.use(cors());
 server.use("/api/client", authenticator, clientRouter);
 server.use("/api/instructor", authenticator, instructorRouter);
 server.use("/api/auth", ClientAuthRouter, InstructorAuthRouter);
+server.use("/api/class", authenticator, classRouter);
 
 server.get("/", (req, res) => {
     res.status(200).json({ message: "It's alive!"})
