@@ -23,8 +23,4 @@ async function add(user) {
 
 function findById(id) {
   return db("instructor").where({ id }).first();
-<<<<<<< HEAD
-} 
-=======
 }
->>>>>>> 25cf192ed51f278aaf1b71fa488febcce5977505
