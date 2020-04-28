@@ -20,4 +20,8 @@ module.exports = (req, res, next) => {
     } else {
     res.status(400).json({message: "please provide credentials!"});
     }
+<<<<<<< HEAD
   };
+=======
+  }; 
+>>>>>>> 25cf192ed51f278aaf1b71fa488febcce5977505

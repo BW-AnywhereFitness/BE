@@ -9,6 +9,7 @@ module.exports = {
       filename: './database/users.db3'
     },
 
+<<<<<<< HEAD
     migrations: {
       directory: './database/migrations'
     },
@@ -51,3 +52,47 @@ module.exports = {
   
     }
   };
+=======
+  migrations: {
+    directory: './database/migrations'
+  },
+  seeds: {
+    directory: './database/seeds'
+  }
+ },
+
+  staging: {
+    client: 'postgresql',
+    connection: {
+      database: 'my_db',
+      user:     'username',
+      password: 'password'
+    },
+    pool: {
+      afterCreate: (conn, done) => {
+        conn.run('PRAGMA foreign_keys = ON', done);
+      },
+    migrations: {
+      tableName: 'knex_migrations'
+    }
+  },
+
+  production: {
+    client: 'postgresql',
+    connection: {
+      database: 'my_db',
+      user:     'username',
+      password: 'password'
+    },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      tableName: 'knex_migrations'
+    }
+  }
+
+  }
+};
+>>>>>>> 25cf192ed51f278aaf1b71fa488febcce5977505

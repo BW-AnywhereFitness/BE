@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
     });
 });
 
-// GET exercises by ID
+// GET classes by ID
 router.get("/:id", restricted, (req, res) => {
   const id = req.params.id;
   Classes.getById(id)
@@ -27,7 +27,7 @@ router.get("/:id", restricted, (req, res) => {
     });
 });
 
-// UPDATE exercises by ID
+// UPDATE classes by ID
 router.put("/:id", restricted, (req, res) => {
   const { id } = req.params;
   const changes = req.body;
@@ -48,7 +48,7 @@ router.put("/:id", restricted, (req, res) => {
     });
 });
 
-// DELETE exercises by ID
+// DELETE classes by ID
 router.delete("/:id", restricted, (req, res) => {
   const { id } = req.params;
 
@@ -67,4 +67,4 @@ router.delete("/:id", restricted, (req, res) => {
     });
 });
 
-module.exports = router; 
+module.exports = router;
