@@ -21,7 +21,11 @@ router.post("/instructor_register", (req, res) => {
 
 router.post("/instructor_login", (req, res) => {
     let { username, password } = req.body;
+<<<<<<< HEAD
+
+=======
     
+>>>>>>> 25cf192ed51f278aaf1b71fa488febcce5977505
     Instructors.findBy({ username })
       .then(([user]) => {
         if (user && bcrypt.compareSync(password, user.password)) {
@@ -53,4 +57,8 @@ router.post("/instructor_login", (req, res) => {
       return jwt.sign(payload, secret, options);
   };
 
+<<<<<<< HEAD
+  module.exports = router;  
+=======
   module.exports = router; 
+>>>>>>> 25cf192ed51f278aaf1b71fa488febcce5977505

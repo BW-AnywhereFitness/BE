@@ -52,8 +52,16 @@ describe("deletes class", function(){
 
     await Classes.remove(1);
     const classes = await db("class")
+<<<<<<< HEAD
+
+    expect(classes).toHaveLength(1)
+    })
+  })
+}); 
+=======
    
     expect(classes).toHaveLength(1)
     })
   })
 });
+>>>>>>> 25cf192ed51f278aaf1b71fa488febcce5977505
