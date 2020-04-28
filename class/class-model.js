@@ -52,8 +52,4 @@ function addClass(newClass) {
     .then(ids => {
       return findById(ids[0]);
     });
-<<<<<<< HEAD
-} 
-=======
 }
->>>>>>> 25cf192ed51f278aaf1b71fa488febcce5977505
