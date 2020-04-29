@@ -14,6 +14,20 @@ router.get("/", (req, res) => {
     });
 });
 
+//POST new class
+router.post("/:id", restricted, (req, res) => {
+  let newClass = req.body;
+  newClass.instructor_id = req.params.id
+  Classes.addClass(newClass)
+    .then(item => {
+      res.status(201).json(item);
+    })
+    .catch(err => {
+      res.status(500).json({ message: "Error posting class" });
+      console.log(err);
+    });
+});
+
 // GET classes by ID
 router.get("/:id", restricted, (req, res) => {
   const id = req.params.id;
