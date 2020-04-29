@@ -6,6 +6,45 @@ All-in-one solution to meet your “on-location” fitness class needs. Anywhere
 
 ## Running the tests
 
+## Models
+
+Client/Instructor
+{ username: string - REQUIRED password: string - REQUIRED }
+
+Class
+ {
+        "id": integer,
+        "instructor_id": integer,
+        "name": "string" - REQUIRED,
+        "type": "string" - REQUIRED,
+        "start_time": "string" - REQUIRED,
+        "duration": "sting" - REQUIRED,
+        "intensity": integer - REQUIRED,
+        "location": "string" - REQUIRED,
+        "register_attendees": integer - REQUIRED,
+        "max_size": integer - REQUIRED
+    }
+
+## Endpoints
+
+BASE URL: https://bw-anywhere-fitness-api.herokuapp.com/
+
+CLIENT LOGIN/REGISTER
+GET:   /api/client   (GET ALL REGISTERED CLIENTS)
+POST:  /api/auth/client_register (REGISTER A CLIENT)
+POST:  /api/auth/client_login    (LOGIN WITH REGISTERED CLIENT)
+
+INSTRUCTOR LOGIN/REGISTER
+GET:   /api/instructor   (GET ALL REGISTERED INSTRUCTORS)
+POST:  /api/auth/instructor_register (REGISTER AN INSTRUCTOR)
+POST:  /api/auth/instructor_login    (LOGIN WITH REGISTERED INSTRUCTOR)
+
+CLASS
+POST:   /api/class/:id/ (ADD CLASS)
+GET:    /api/class/     (GET ALL CLASSES)
+GET:    /api/class/:id/ (GET CLASS By ID)
+PUT:    /api/class/:id/ (EDIT CLASS By ID)
+DELETE: /api/class/:id/ (DELETE CLASS By ID)
 
 ### Built With
 Dropwizard - The web framework used
