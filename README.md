@@ -59,14 +59,6 @@ PUT:    /api/class/:id/ (EDIT CLASS By ID)
 DELETE: /api/class/:id/ (DELETE CLASS By ID)
 ```
 
-### Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-
-## Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
 ### Authors
 - Samuel Ardis - Back-End Developer
 - Daniel McNamara- Back-End Developer
