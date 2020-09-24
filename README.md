@@ -73,8 +73,3 @@ Daniel McNamara- Back-End Developer
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
-
-### Acknowledgments
-Hat tip to anyone whose code was used
-Lambda School for the training to complete this project
-TLs, SLs, and fellow students for help and quidance
