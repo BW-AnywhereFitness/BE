@@ -1,5 +1,6 @@
 ## Build Week --- Anywhere Fitness API
-All-in-one solution to meet your “on-location” fitness class needs. AnywhereFitness makes it painless for Instructors and Clients alike to hold and attend Fitness classes wherever they might be held.
+All-in-one solution to meet your “on-location” fitness class needs. 
+AnywhereFitness makes it painless for Instructors and Clients alike to hold and attend Fitness classes wherever they might be held.
 
 ### Base URL: https://bw-anywhere-fitness-api.herokuapp.com/
 
@@ -7,8 +8,14 @@ All-in-one solution to meet your “on-location” fitness class needs. Anywhere
 
 ## Data Schemas
 
-Client/Instructor
-{ username: string - REQUIRED password: string - REQUIRED }
+Client/Instructor:
+
+```json
+{ 
+username: "string" - REQUIRED 
+password: "string" - REQUIRED 
+}
+```
 
 Class:
 ```json
