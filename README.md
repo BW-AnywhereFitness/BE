@@ -12,6 +12,7 @@ Client/Instructor
 { username: string - REQUIRED password: string - REQUIRED }
 
 Class
+```json
  {
         "id": integer,
         "instructor_id": integer,
@@ -24,6 +25,7 @@ Class
         "register_attendees": integer - REQUIRED,
         "max_size": integer - REQUIRED
     }
+    ```
 
 ## Endpoints
 
