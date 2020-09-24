@@ -68,8 +68,8 @@ ROME - Used to generate RSS Feeds
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### Authors
-Samuel Ardis - Back-End Developer
-Daniel McNamara- Back-End Developer
+- Samuel Ardis - Back-End Developer
+- Daniel McNamara- Back-End Developer
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
